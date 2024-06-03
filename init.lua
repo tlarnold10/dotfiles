@@ -12,7 +12,6 @@ g.transparency = config.ui.transparency
 opt.laststatus = 3 -- global statusline
 opt.showmode = false
 
-opt.clipboard = "unnamedplus"
 opt.cursorline = true
 
 -- Indenting
@@ -25,6 +24,16 @@ opt.list = true
 opt.listchars = { space = ".", tab = "->"}
 opt.relativenumber = true
 
+opt.clipboard = "unnamedplus"
+if vim.fn.has('wsl') == 1 then
+    vim.api.nvim_create_autocmd('TextYankPost', {
+        group = vim.api.nvim_create_augroup('Yank', { clear = true }),
+        callback = function()
+        vim.fn.system('clip.exe', vim.fn.getreg('"'))
+        end,
+    })
+
+end
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
 opt.smartcase = true
