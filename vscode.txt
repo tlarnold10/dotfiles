@@ -1,0 +1,17 @@
+A place to adding some comments, commands, and plugins for my vs code setup.
+
+Keyboard shortcuts:
+- "ctrl + h" => navigate to left pane if vertical panes (View: Focus Right Editor Group)
+- "ctrl + l" => navigate to right pane if vertical panes (View: Focus Right Editor Group)
+- "ctrl + b" => toggle primary side bar
+- "ctrl + w" => close active tab
+- "a" when `explorerViewletFocus` => creates a new file when focus is on the explorer
+
+Plugins: 
+- Vim
+- Background
+- GitLens
+- Code Spell Checker
+
+Commands:
+- "ctrl + alt + RightArrow" => split buffer into vertical panes
