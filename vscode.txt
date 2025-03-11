@@ -6,6 +6,7 @@ Keyboard shortcuts:
 - "ctrl + b" => toggle primary side bar
 - "ctrl + w" => close active tab
 - "a" when `explorerViewletFocus` => creates a new file when focus is on the explorer
+- "G T" => Go to Definition
 
 Plugins: 
 - Vim
